@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="icon" type="image/png" href="img/logo.png">
+        <title>Hungry Gastro Food Bars</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Hungry Gastro Food Bar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#cart">Carta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resev">Reserva</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cont">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+    <section class="pt-5">
+      <div class="jumbotron p-5 bg-light">
+        <div class="title">
+          <h1 class="display-5 fw-bold">Bienvenido a Hungry Gastro Food Bar</h1>
+          <p class="pt-3 fs-3">Un lugar donde la pasión por la gastronomía se encuentra con un ambiente acogedor y moderno. Nuestro restaurante se distingue por ofrecer una experiencia culinaria única, combinando la tradición de la comida reconfortante con un toque gourmet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart" class="p-5">
+      <div class="container">
+        <h1 class="text-center pb-3">Carta</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <a href="menu.html#entran">
+                <img src="img/entr-carpaccio.jpeg" class="card-img-top" alt="Entrantes">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Entrantes</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="menu.html#princip">
+              <img src="img/princ-chuleton_vaca.jpeg" class="card-img-top" alt="Plato principal">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Principal</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="menu.html#post">
+              <img src="img/post-gundel.png" class="card-img-top" alt="Postres">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Postres</h5>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5 about">
+      <div class="forms">
+        <h1 id="resev" class="py-3 text-center">Reserva & Horarios</h1>
+        <div class="row">
+          <div class="col-md-7">
+            <div id="contact" class="mb-3 pt-5 px-5">
+              <h2>Reserva</h2>
+              <form action="https://formsubmit.co/catalinacatalanaro@gmail.com" method="POST">
+              <form action="#">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input type="text" name="nombre" id="nombre" class="form-control cajas">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" name="email" id="email" class="form-control cajas">
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="tel" name="telefono" id="telefono" class="form-control cajas">
+                </div>
+                <div class="mb-3">
+                  <label for="llegada" class="form-label">Fecha y hora de llegada</label>
+                  <input type="datetime-local" id="llegada" name="fecha-hora-llegada" class="form-control cajas">
+                </div>
+                <div class="mb-3">
+                  <label for="personas" class="form-label">Cantidad de personas</label>
+                  <select id="personas" name="personas" class="form-select cajas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+                <input type="hidden" name="_next" value="https://personal-website-ccatala.netlify.app/">
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="mb-3 pt-5 px-5">
+              <h2>Horarios:</h2>
+              <br>
+              <h6>Lunes - Cerrado</h6>
+              <h6>Martes - 19:30 - 21:30</h6>
+              <h6>Miércoles - 13:00 - 15:00 & 19:30 - 21:30</h6>
+              <h6>Jueves - 13:00 - 15:00 & 19:30 - 21:30</h6>
+              <h6>Viernes - 13:00 - 15:00 & 19:30 - 21:30</h6>
+              <h6>Sábado - 13:00 - 15:00 & 19:30 - 21:30</h6>
+              <h6>Domingo - Cerrado</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="cont" class="bg-dark text-white">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-6 p-5">
+                  <p>Dirección - <span class="text-secondary">Carrer d'Enric Alzamora 3, 07002 Palma de Mallorca, Mallorca, España</span></p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.351326562713!2d2.6550183991774268!3d39.574231706307195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297926079c4ff41%3A0x9b1042b1936f0b8a!2sCarrer%20d&#39;Enric%20Alzamora%2C%2007002%20Palma%2C%20Illes%20Balears%2C%20Spain!5e0!3m2!1sen!2sfr!4v1682695279514!5m2!1sen!2sfr" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="col-md-6 p-5">
+                  <div class="mb-3">
+                    <h5>Contacto</h5>
+                    <p>Teléfono: <span class="text-secondary">+34 123 456 789</span></p>
+                    <p>Email: <span class="text-secondary">info@hungrygastro.com</span></p>
+                    <p>Síguenos en nuestras redes sociales:</p>
+                  </div>
+                  <!-- Iconos de redes sociales -->
+                  <div class="social-icons mb-3 pt-3 px-5">
+                    
+        
+                    <a href="https://www.facebook.com/people/Hungry-Gastro-Food-Bar/100052160184800/" target="_blank">
+                      <img src="img/facebook.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/hungrygastrofoodbar/" target="_blank">
+                      <img src="img/instagram.png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://www.tripadvisor.es/Restaurant_Review-g187463-d17253091-Reviews-Hungry_Gastro_Food_Bar-Palma_de_Mallorca_Majorca_Balearic_Islands.html" target="_blank">
+                      <img src="img/tripadvisor.png" alt="Tripadvisor" class="social-icon">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center pt-3">
+                <p>&copy; 2024 Hungry Gastro Food Bar. Todos los derechos reservados.</p>
+              </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
