@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "source": "index.html",
   "scripts": {
-<<<<<<< HEAD
-=======
     "lint": "eslint .",
->>>>>>> 7a1c953b370a7e1e54f09eca75b7bb8d8c6cbe3b
     "build": "npx parcel build",
     "start": "npx parcel",
     "test": "echo \"Error: no test specified\" && exit 1"
