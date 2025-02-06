@@ -171,7 +171,15 @@ footer .social-icon:hover {
 }
 
 footer .text-secondary {
-  color: #ccc;
+  color: #b0bec5;
+}
+
+footer .bg-dark {
+  background-color: #000;
+}
+
+footer .text-light {
+  color: #f1f1f1;
 }
 
 footer .row .col-md-6 {
