@@ -92,11 +92,21 @@ nav a:focus {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Improved card shadow */
 }
 
+.card-title {
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  
+}
+
 .card img {
   width: 100%;
   height: auto;
   border-radius: 8px; /* Added rounded corners to card images */
 }
+
+
 
 /* Inputs */
 .cajas {
