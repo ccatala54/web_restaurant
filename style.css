@@ -6,9 +6,11 @@
 }
 
 body {
-  background: whitesmoke;
+  background: rgb(245, 245, 245);
   font-family: Arial, sans-serif; /* Added for consistent font */
 }
+
+
 
 /* Navbar */
 .navbar {
@@ -156,7 +158,9 @@ footer {
   color: #fff;
   padding: 40px 0;
 }
-
+.contact{
+  color: #77cda9;
+}
 footer .container-fluid {
   padding: 20px;
 }
