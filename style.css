@@ -14,7 +14,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: url('img/fondolog.png');
+  background: url('img/fondolog.webp');
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -41,7 +41,7 @@ nav a:focus {
 
 /* Jumbotron */
 .jumbotron {
-  background: url('img/entrada.jpg') fixed;
+  background: url('img/entrada.webp') fixed;
   background-size: cover;
   height: 90vh;
   color: white;
@@ -68,7 +68,7 @@ nav a:focus {
 
 /* Forms */
 .forms {
-  background: url('img/fondo2.png');
+  background: url('img/fondo2.webp');
   margin: 0;
   padding: 20px;
   width: 100%;
@@ -78,7 +78,7 @@ nav a:focus {
 
 /* Container */
 .container {
-  background: url('img/fondo2.png');
+  background: url('img/fondo2.webp');
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
