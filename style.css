@@ -39,6 +39,42 @@ nav a:focus {
   color: #f58d88; 
 }
 
+/* Jumbotron */
+.jumbotron {
+  background: url('img/entrada.webp') fixed;
+  background-size: cover;
+  height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  padding: 15px; 
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.about {
+  background-color: whitesmoke;
+  padding: 50px 0;
+}
+
+/* Forms */
+.forms {
+  background: url('img/fondo2.webp');
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.99);
+  border-radius: 8px; 
+}
+
 /* Container */
 .container {
   background: url('img/fondo2.webp');
@@ -69,6 +105,50 @@ nav a:focus {
   width: 100%;
   height: auto;
   border-radius: 8px; /* Added rounded corners to card images */
+}
+
+
+
+/* Inputs */
+.cajas {
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.cajas:hover,
+.cajas:focus {
+  background-color: #f58d88;
+  border: 2px solid #6c6c6c;
+  box-shadow: none;
+  outline: none; /* Removed outline on focus for custom border */
+}
+
+/* Button */
+.btn {
+  height: 40px;
+  padding: 10px 40px;
+  border-radius: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f58d88;
+  color: white;
+}
+
+.btn:focus {
+  outline: none; /* Removed focus outline */
 }
 
 h3{
