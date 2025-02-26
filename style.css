@@ -37,7 +37,7 @@ nav a:focus {
 
 /* Jumbotron */
 .jumbotron {
-  background: url('img/entrada.webp') fixed center/cover;
+  background: url('img/entrada0.webp') fixed center/cover;
   height: 90vh;
   color: white;
   display: flex;
