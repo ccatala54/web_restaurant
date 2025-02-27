@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hungry Gastro Food Bar - Descubre los mejores platos en un ambiente acogedor en Palma de Mallorca.">
-    <meta name="keywords" content="restaurante, comida, gastrobar, Palma de Mallorca, reserva, menú">
-    <meta name="author" content="Hungry Gastro Food Bar">
-    
-    <!-- Preload y defer para optimización -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/webp" href="img/logo.webp">
-    
-    <title>Hungry Gastro Food Bar</title>
-
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .jumbotron {
-            min-height: 90vh;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: url('img/entrada.webp') no-repeat center center / cover;
-        }
-        .title {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 15px;
-            border-radius: 10px;
-            max-width: 90%;
-        }
-        .about { background-color: whitesmoke; padding: 50px 0; }
-        .forms {
-            background: url('img/fondo2.webp') no-repeat center center / cover;
-            padding: 20px;
-            border-radius: 8px;
-            color: white;
-        }
-        .cajas {
-            border: 2px solid #ccc;
-            padding: 10px;
-            margin: 15px 0;
-            width: 100%;
-            border-radius: 5px;
-            transition: border-color 0.3s ease, background-color 0.3s ease;
-        }
-        .cajas:hover, .cajas:focus {
-            background-color: #f58d88;
-            border-color: #6c6c6c;
-            outline: none;
-        }
-        .btn {
-            height: 40px;
-            padding: 10px 40px;
-            border-radius: 7px;
-            font-weight: 700;
-            text-transform: uppercase;
-            background-color: white;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .btn:hover { background-color: #f58d88; color: white; }
-        .btn:focus { outline: none; }
-        @media (max-width: 768px) {
-            .jumbotron { height: auto; padding: 50px 20px; }
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+        <link rel="stylesheet" href="style.css" media="screen">
+        <link rel="icon" type="image/webp" href="img/logo.webp">
+        <title>Hungry Gastro Food Bar</title>
+        
+        <style>
+            .jumbotron {
+                background: url('img/entrada0.webp') no-repeat center center / cover;
+                height: 90vh;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .title {
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+                padding: 15px;
+                max-width: 90%;
+            }
+            .about {
+                background-color: whitesmoke;
+                padding: 50px 0;
+            }
+            .forms {
+                background: url('img/fondo2.webp') no-repeat center center / cover;
+                padding: 20px;
+                border-radius: 8px;
+                color: white;
+            }
+            .cajas {
+                border-radius: 5px;
+                margin: 15px 0;
+                padding: 10px;
+                width: 100%;
+                border: 2px solid #ccc;
+                transition: border-color 0.3s ease;
+            }
+            .cajas:hover, .cajas:focus {
+                background-color: #f58d88;
+                border-color: #6c6c6c;
+                outline: none;
+            }
+            .btn {
+                height: 40px;
+                padding: 10px 40px;
+                border-radius: 7px;
+                font-weight: 700;
+                text-transform: uppercase;
+                background-color: white;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+            .btn:hover {
+                background-color: #f58d88;
+                color: white;
+            }
+            .btn:focus {
+                outline: none;
+            }
+            @media (max-width: 768px) {
+                .jumbotron {
+                    height: auto;
+                    padding: 50px 20px;
+                    background-image: url('img/entrada0.webp');
+                }
+            }
+        </style>
+    </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Hungry Gastro Food Bar</a>
@@ -78,9 +82,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#cart">Carta</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resev">Reserva</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cont">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart">Carta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resev">Reserva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cont">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -90,7 +100,7 @@
         <div class="bg-light jumbotron p-5">
             <div class="title">
                 <h1 class="display-5 fw-bold">Bienvenido a Hungry Gastro Food Bar</h1>
-                <p class="pt-3 fs-3">Un lugar donde la pasión por la gastronomía se encuentra con un ambiente acogedor y moderno.</p>
+                <p class="pt-3 fs-3">Un lugar donde la pasión por la gastronomía se encuentra con un ambiente acogedor y moderno. Nuestro restaurante se distingue por ofrecer una experiencia culinaria única, combinando la tradición de la comida reconfortante con un toque gourmet.</p>
             </div>
         </div>
     </section>
@@ -102,51 +112,105 @@
                 <div class="col-md-4">
                     <div class="card">
                         <a href="menu.html#entran">
-                            <img src="img/entr-carpaccio.webp" width="400" height="300" loading="lazy" class="card-img-top" alt="Entrantes - Carpaccio">
+                            <img src="img/entr-carpaccio.webp" width="400" height="300" loading="lazy" class="card-img-top" alt="Entrantes">
                         </a>
+                        <div class="card-body">
+                            <h2 class="card-title">Entrantes</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <a href="menu.html#princip">
-                            <img src="img/princ-chuleton_vaca.webp" width="400" height="300" loading="lazy" class="card-img-top" alt="Plato Principal - Chuletón de Vaca">
+                            <img src="img/princ-chuleton_vaca.webp" width="400" height="300" loading="lazy" class="card-img-top" alt="Plato principal">
                         </a>
+                        <div class="card-body">
+                            <h2 class="card-title">Principal</h2>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <a href="menu.html#post">
-                            <img src="img/post-gundel.webp" width="400" height="300" loading="lazy" class="card-img-top" alt="Postre - Gundel">
+                            <img src="img/post-gundel.webp" width="400" height="300" loading="lazy" class="card-img-top" alt="Postre">
                         </a>
+                        <div class="card-body">
+                            <h2 class="card-title">Postres</h2>              
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="resev" class="pb-5 about">
+    <section class="pb-5 about">
         <div class="forms">
-            <h1 class="py-3 text-center">Reserva & Horarios</h1>
+            <h1 id="resev" class="py-3 text-center">Reserva & Horarios</h1>
             <div class="row">
                 <div class="col-md-7">
-                    <form action="https://formsubmit.co/catalinacatalanaro@gmail.com" method="POST">
-                        <input type="text" placeholder="Nombre completo" name="nombre" class="form-control cajas">
-                        <input type="email" placeholder="Correo electrónico" name="email" class="form-control cajas">
-                        <input type="number" placeholder="Número de teléfono" name="telefono" class="form-control cajas">
-                        <input type="datetime-local" name="fecha-hora-llegada" class="form-control cajas">
-                        <button type="submit" class="btn">Enviar</button>
-                    </form>
+                    <div id="contact" class="mb-3 pt-5 px-5">
+                        <h2>Reserva</h2>
+                        <form action="https://formsubmit.co/catalinacatalanaro@gmail.com" method="POST">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" placeholder="Nombre completo" name="nombre" id="nombre" class="form-control cajas">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" placeholder="Correo electrónico" name="email" id="email" class="form-control cajas">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="number" placeholder="Numero de telefono" name="telefono" id="telefono" class="form-control cajas">
+                            </div>
+                            <div class="mb-3">
+                                <label for="llegada" class="form-label">Fecha y hora de llegada</label>
+                                <input type="datetime-local" id="llegada" name="fecha-hora-llegada" class="form-control cajas">
+                            </div>
+                            <div class="mb-3">
+                                <label for="personas" class="form-label">Cantidad de personas</label>
+                                <select id="personas" name="personas" class="form-select cajas">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Enviar</button>
+                            <input type="hidden" name="_next" value="https://web-restaurante0.netlify.app/">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="mb-3 pt-5 px-5">
+                        <h2>Horarios:</h2>
+                        <br>
+                        <h3>Lunes - Cerrado</h3>
+                        <h4>Martes - 19:30 - 21:30</h4>
+                        <h4>Miércoles - 13:00 - 15:00 & 19:30 - 21:30</h4>
+                        <h4>Jueves - 13:00 - 15:00 & 19:30 - 21:30</h4>
+                        <h4>Viernes - 13:00 - 15:00 & 19:30 - 21:30</h4>
+                        <h4>Sábado - 13:00 - 15:00 & 19:30 - 21:30</h4>
+                        <h3>Domingo - Cerrado</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="cont" class="bg-dark text-light text-center p-3">
+    <footer id="cont" class="bg-dark text-light">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 p-5">
                     <p>Dirección - <span class="contact">Carrer d'Enric Alzamora 3, 07002 Palma de Mallorca, Mallorca, España</span></p>
-                    
                 </div>
                 <div class="col-md-6 p-5">
                     <div class="mb-3">
@@ -158,13 +222,13 @@
                     <div class="social-icons mb-3 pt-3 px-5">
 
                       <a href="https://www.facebook.com/people/Hungry-Gastro-Food-Bar/100052160184800/" target="_blank">
-                        <img src="img/faceb.webp" width="400" height="300" loading="lazy" class="social-icon" alt="Facebook">
+                        <img src="img/facebook.webp" width="400" height="300" loading="lazy" class="social-icon" alt="Facebook">
                       </a>
                       <a href="https://www.instagram.com/hungrygastrofoodbar/" target="_blank">
-                        <img src="img/inst.webp" width="400" height="300" loading="lazy" class="social-icon" alt="Instagram">
+                        <img src="img/instagram.webp" width="400" height="300" loading="lazy" class="social-icon" alt="Instagram">
                       </a>
                       <a href="https://www.tripadvisor.es/Restaurant_Review-g187463-d17253091-Reviews-Hungry_Gastro_Food_Bar-Palma_de_Mallorca_Majorca_Balearic_Islands.html" target="_blank">
-                        <img src="img/tripadv.webp" width="400" height="300" loading="lazy"  class="social-icon" alt="Tripadvisor">
+                        <img src="img/tripadvisor.webp" width="400" height="300" loading="lazy"  class="social-icon" alt="Tripadvisor">
                       </a>
 
                     </div>
@@ -173,6 +237,6 @@
         </div>
     </footer>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
