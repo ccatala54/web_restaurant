@@ -5,98 +5,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+        <link rel="stylesheet" href="style.css" media="screen">
         <link rel="icon" type="image/webp" href="img/logo.webp">
         <title>Hungry Gastro Food Bar</title>
-        <link rel="preload" as="image" href="img/entrada.webp">
-        <link rel="stylesheet" href="style.css">
-
+        
         <style>
-            /* Jumbotron */
-                .jumbotron {
-                background: url('img/entrada0.webp') fixed center/cover;
+            .jumbotron {
+                background: url('img/entrada0.webp') no-repeat center center / cover;
                 height: 90vh;
                 color: white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                }
-
-                .title {
+            }
+            .title {
                 background: rgba(0, 0, 0, 0.5);
                 border-radius: 10px;
-                color: white;
                 padding: 15px;
                 max-width: 90%;
-                margin: 0 auto;
-                }
-
-                .about {
+            }
+            .about {
                 background-color: whitesmoke;
                 padding: 50px 0;
-                }
-
-                /* Forms */
-                .forms{
-                background: url('img/fondo2.webp');
-                width: 100%;
-                color: rgba(255, 255, 255, 0.99);
-                border-radius: 8px;
+            }
+            .forms {
+                background: url('img/fondo2.webp') no-repeat center center / cover;
                 padding: 20px;
-                }
-
-                .cajas {
+                border-radius: 8px;
+                color: white;
+            }
+            .cajas {
                 border-radius: 5px;
                 margin: 15px 0;
                 padding: 10px;
                 width: 100%;
                 border: 2px solid #ccc;
                 transition: border-color 0.3s ease;
-                }
-
-                .cajas:hover,
-                .cajas:focus {
+            }
+            .cajas:hover, .cajas:focus {
                 background-color: #f58d88;
                 border-color: #6c6c6c;
-                box-shadow: none;
                 outline: none;
-                }
-                /* Button */
-                .btn {
+            }
+            .btn {
                 height: 40px;
                 padding: 10px 40px;
                 border-radius: 7px;
                 font-weight: 700;
                 text-transform: uppercase;
-                border: 0;
-                color: black;
                 background-color: white;
-                cursor: pointer;
                 transition: background-color 0.3s ease, color 0.3s ease;
-                }
-
-                .btn:hover {
-                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            }
+            .btn:hover {
                 background-color: #f58d88;
                 color: white;
-                }
-
-                .btn:focus {
+            }
+            .btn:focus {
                 outline: none;
+            }
+            @media (max-width: 768px) {
+                .jumbotron {
+                    height: auto;
+                    padding: 50px 20px;
+                    background-image: url('img/entrada0.webp');
                 }
-
-                h4 {
-                font-size: 18px;
-                }
-
-                @media (max-width: 768px) {
-                    .jumbotron {
-                        height: auto;
-                        padding: 50px 20px;
-                        background-image: url('img/entrada0.webp');
-                    }
-
-                }
+            }
         </style>
     </head>
 <body>
@@ -237,7 +211,15 @@
             <div class="row">
                 <div class="col-md-6 p-5">
                     <p>Dirección - <span class="contact">Carrer d'Enric Alzamora 3, 07002 Palma de Mallorca, Mallorca, España</span></p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.349121991252!2d2.6551461!3d39.5742814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297933bf67419b3%3A0x93650e3ff29b059b!2sHungry%20Gastro%20Food%20Bar!5e0!3m2!1ses!2ses!4v1738955935782!5m2!1ses!2ses" title="Mapa de la ubicación de Hungry Gastro" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.349121991252!2d2.6551461!3d39.5742814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297933bf67419b3%3A0x93650e3ff29b059b!2sHungry%20Gastro%20Food%20Bar!5e0!3m2!1ses!2ses!4v1738955935782!5m2!1ses!2ses" 
+                        title="Mapa de la ubicación de Hungry Gastro"
+                        width="300" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
                 </div>
                 <div class="col-md-6 p-5">
                     <div class="mb-3">
@@ -264,6 +246,6 @@
         </div>
     </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
