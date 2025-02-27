@@ -35,47 +35,18 @@ nav a:focus {
   color: #f58d88;
 }
 
-/* Jumbotron */
-.jumbotron {
-  background: url('img/entrada0.webp') fixed center/cover;
-  height: 90vh;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  color: white;
-  padding: 15px;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.about {
-  background-color: whitesmoke;
-  padding: 50px 0;
-}
-
-/* Forms */
-.forms,
 .container {
   background: url('img/fondo2.webp');
   width: 100%;
   color: rgba(255, 255, 255, 0.99);
   border-radius: 8px;
-  padding: 20px;
-}
-
-.container {
+  padding: 20px; 
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Cards */
 .card {
@@ -97,56 +68,10 @@ nav a:focus {
   border-radius: 8px;
 }
 
-/* Inputs */
-.cajas {
-  border-radius: 5px;
-  margin: 15px 0;
-  padding: 10px;
-  width: 100%;
-  border: 2px solid #ccc;
-  transition: border-color 0.3s ease;
-}
-
-.cajas:hover,
-.cajas:focus {
-  background-color: #f58d88;
-  border-color: #6c6c6c;
-  box-shadow: none;
-  outline: none;
-}
-
-/* Button */
-.btn {
-  height: 40px;
-  padding: 10px 40px;
-  border-radius: 7px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: 0;
-  color: black;
-  background-color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn:hover {
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  background-color: #f58d88;
-  color: white;
-}
-
-.btn:focus {
-  outline: none;
-}
-
 /* Headings */
 h3 {
   font-size: 20px;
   font-weight: bold;
-}
-
-h4 {
-  font-size: 18px;
 }
 
 /* Footer */
@@ -201,12 +126,6 @@ footer .row .col-md-6 {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .jumbotron {
-    height: auto;
-    padding: 50px 20px;
-    background-image: url('img/entrada.webp');
-  }
-
   .container {
     max-width: 90%;
   }
