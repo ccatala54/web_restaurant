@@ -89,19 +89,19 @@ footer .container-fluid {
   padding: 20px;
 }
 
-footer .social-icons {
-  margin-top: 10px;
-}
-
 footer .social-icons a {
   margin: 0 10px;
   display: inline-block;
 }
 
 footer .social-icon {
-  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 40px;
   height: auto;
-  transition: transform 0.3s ease-in-out;
 }
 
 footer .social-icon:hover {
